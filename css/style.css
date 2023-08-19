@@ -156,6 +156,5 @@ header {
     color: white;
     background-color: #9356DC;
     border-radius: 99px; }
-  .step strong:nth-child(2n) {
-    display: inline-block;
-    width: 200px; }
+  .step span {
+    float: left; }

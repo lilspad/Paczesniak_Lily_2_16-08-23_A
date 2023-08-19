@@ -1,8 +1,7 @@
 /* Reset */
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 ol,
 ul {
@@ -23,3 +22,21 @@ body {
 
 h1 {
   font-family: 'Shrikhand', cursive; }
+
+/* Images */
+.of-cover100 {
+  object-fit: cover;
+  height: 100%;
+  width: 100%; }
+
+/* Header */
+header {
+  height: fit-content;
+  width: 100%;
+  box-shadow: 0 5px 10px -2px #bebebe; }
+
+.logo {
+  height: 30px;
+  width: fit-content;
+  margin: auto;
+  padding: 25px 0 15px 0; }

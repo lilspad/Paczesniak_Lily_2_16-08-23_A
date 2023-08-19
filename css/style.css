@@ -244,3 +244,17 @@ header .logo {
 footer {
   color: white;
   background-color: #353535; }
+
+/* media queries */
+@media screen and (min-width: 823px) {
+  .bg-gray-light {
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px; }
+  .bg-gray-dark {
+    width: unset;
+    margin: 20px 30px;
+    border-radius: 15px; }
+  .ms-pad-b-30 {
+    padding-top: 5px;
+    padding-bottom: 30px; } }

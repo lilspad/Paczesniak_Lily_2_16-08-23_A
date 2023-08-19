@@ -15,3 +15,11 @@ a {
 button {
   background: none;
   border: none; }
+
+/* Variables (scss) */
+/* General */
+body {
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-family: 'Shrikhand', cursive; }

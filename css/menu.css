@@ -1,0 +1,7 @@
+/* header */
+.header-arrow {
+  position: absolute;
+  top: 28px;
+  left: 21px;
+  color: #353535;
+  -webkit-text-stroke: 1px #353535; }

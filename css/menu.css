@@ -10,14 +10,19 @@
 .menu-item {
   flex: 1 1 400px;
   border-radius: 18px;
-  padding: 15px;
   background-color: white;
   box-shadow: 2px 4px 10px #e1e1e1;
   margin-top: 20px;
   opacity: 0;
   animation-duration: 1.5s;
   animation-name: appear;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  overflow: hidden; }
+  .menu-item:hover .check {
+    animation: check;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: flex; }
 
 .hf-udln::after {
   content: "";
@@ -26,6 +31,18 @@
   left: 0;
   bottom: 12px;
   border-bottom: 3px solid #99E2D0; }
+
+/* checkmark */
+.check {
+  display: none;
+  width: 0;
+  background-color: #99E2D0;
+  border-radius: 0 18px 18px 0;
+  overflow: hidden; }
+
+.check-icon {
+  color: white;
+  padding: 25px 22px; }
 
 /* animations */
 @keyframes appear {
@@ -46,3 +63,9 @@
 
 .menu-item:nth-child(3n) {
   animation-delay: 0.6s; }
+
+@keyframes check {
+  from {
+    width: 0; }
+  to {
+    width: 70px; } }

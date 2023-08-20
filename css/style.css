@@ -111,6 +111,12 @@ h1, .shrik {
 .gap-40 {
   gap: 40px; }
 
+.col-g-20 {
+  column-gap: 20px; }
+
+.mx-h-50 {
+  max-height: 50vh; }
+
 .w-full {
   width: 100%; }
 
@@ -125,7 +131,7 @@ h1, .shrik {
   margin: 15px 0; }
 
 .m-top-over {
-  margin-top: -50px; }
+  margin-top: -50px !important; }
 
 .m-b-20 {
   margin-bottom: 20px; }
@@ -161,6 +167,9 @@ h1, .shrik {
 /* Misc */
 .sp-05 {
   letter-spacing: 0.5px; }
+
+.ovf-hid {
+  overflow: hidden; }
 
 .of-coverh180 {
   object-fit: cover;

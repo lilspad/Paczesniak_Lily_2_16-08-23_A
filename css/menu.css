@@ -11,10 +11,11 @@
   flex: 1 1 400px;
   border-radius: 18px;
   padding: 15px;
-  box-shadow: 2px 6px 10px #c7c7c7;
-  margin-top: 10px;
+  background-color: white;
+  box-shadow: 2px 4px 10px #e1e1e1;
+  margin-top: 20px;
   opacity: 0;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-name: appear;
   animation-fill-mode: forwards; }
 
@@ -29,12 +30,12 @@
 /* animations */
 @keyframes appear {
   from {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 0;
     opacity: 0; }
   to {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     opacity: 1; } }
 
 .menu-item:nth-child(1n) {

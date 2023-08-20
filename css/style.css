@@ -26,7 +26,6 @@ select {
   select:focus {
     outline: none; }
 
-/* Variables (scss) */
 /* General */
 main {
   line-height: 1.5; }
@@ -93,6 +92,9 @@ h1, .shrik {
 
 .ag-start {
   align-items: flex-start; }
+
+.ag-end {
+  align-items: flex-end; }
 
 .f-basic {
   flex: 1 1 auto; }

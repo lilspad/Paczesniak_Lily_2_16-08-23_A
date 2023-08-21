@@ -120,6 +120,9 @@ h1, .shrik {
 .w-full {
   width: 100%; }
 
+.w-190 {
+  width: 190px; }
+
 .w-200 {
   width: 200px; }
 
@@ -227,6 +230,10 @@ header .logo {
   .main-button:hover {
     opacity: 0.7;
     box-shadow: 2px 6px 7px #8e8e8e; }
+
+.centered {
+  display: block;
+  margin: 15px auto; }
 
 /* Steps */
 .step {

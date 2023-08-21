@@ -171,6 +171,14 @@ h1, .shrik {
 .ovf-hid {
   overflow: hidden; }
 
+.txt-ovf-elip {
+  max-width: 89%; }
+
+.txt-ovf-elip h4, p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
 .of-coverh180 {
   object-fit: cover;
   height: 180px;

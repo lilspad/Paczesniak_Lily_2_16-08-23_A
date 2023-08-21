@@ -1,2 +1,2 @@
 # OhMyFood
- OpenClassrooms Web Dev Project 2 - restauramt menu viewing app. 
+ OpenClassrooms Web Dev Project 2 - restaurant menu viewing app. 

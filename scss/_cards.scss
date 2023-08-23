@@ -6,8 +6,7 @@
     border-radius: 15px;
     box-shadow: $shadow_2;
     overflow: hidden;
-    &.new::after {
-        content: "New";
+    & .new {
 		position: absolute;
 		top: 10px;
 		right: 20px;
@@ -19,6 +18,22 @@
 		border-radius: 3px;
         box-shadow: 2px 4px 5px #4a4a4a;
     }
+}
+
+.stretch-link {
+    position: absolute;
+    inset: 0;
+    & h4, p {
+        position: relative;
+        left: 15px;
+        top: 195px;
+    }
+}
+
+.heart-icon {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
 }
 
 /* Heart button */

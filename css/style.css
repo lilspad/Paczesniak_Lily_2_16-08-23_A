@@ -158,6 +158,9 @@ h1, .shrik {
 .pad-b-15 {
   padding-bottom: 15px; }
 
+.pad-25 {
+  padding: 25px; }
+
 .pad-30 {
   padding: 30px; }
 
@@ -265,8 +268,7 @@ header .logo {
   border-radius: 15px;
   box-shadow: 2px 4px 10px #e1e1e1;
   overflow: hidden; }
-  .card.new::after {
-    content: "New";
+  .card .new {
     position: absolute;
     top: 10px;
     right: 20px;
@@ -277,6 +279,19 @@ header .logo {
     padding: 4px 24px;
     border-radius: 3px;
     box-shadow: 2px 4px 5px #4a4a4a; }
+
+.stretch-link {
+  position: absolute;
+  inset: 0; }
+  .stretch-link h4, .stretch-link p {
+    position: relative;
+    left: 15px;
+    top: 195px; }
+
+.heart-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 40px; }
 
 /* Heart button */
 .txt-stroke {

@@ -1,0 +1,117 @@
+@import 'variables';
+
+/* animations */
+
+@keyframes appear {
+    from {
+        margin-top: 20px;
+        margin-bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0;
+        margin-bottom: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes check {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70px;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* header */
+
+.header-arrow {
+    position: absolute;
+    top: 28px;
+    left: 21px;
+    color: #353535;
+    -webkit-text-stroke: 1px #353535;
+}
+
+/* Headings */
+
+.hf-udln::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    left: 0;
+    bottom: 12px;
+    border-bottom: 3px solid $color_3;
+}
+
+/* menu card */
+
+.menu-item {
+    flex: 1 1 400px;
+    position: relative;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: $shadow_2;
+    margin-top: 20px;
+    opacity: 0;
+    animation-duration: 1.5s;
+	animation-name: appear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    &:hover {
+        .shrink {
+            width: calc(100% - 70px);
+            transition: all 1s;
+        }
+        .check {
+            animation: check;
+            animation-duration: 0.8s;
+            animation-fill-mode: forwards;
+            display: flex;
+        }
+        .check-icon {
+            animation: spin;
+            animation-duration: 0.4s;
+            animation-delay: 0.2s;
+            animation-fill-mode: forwards;
+            display: flex;
+        }
+    }
+}
+
+/* Item appearance delay */
+
+@for $i from 1 through 3 {
+    .menu-item:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.2}s;
+    }
+}
+
+/* checkmark */
+
+.check {
+    display: none;
+    width: 0;
+    background-color: $color_3;
+    border-radius: 0 18px 18px 0;
+    overflow: hidden;
+}
+
+.check-icon {
+    color: white;
+    height: 22px;
+    margin: 29px 23px;
+}

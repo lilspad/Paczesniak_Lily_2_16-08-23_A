@@ -1,0 +1,30 @@
+/* Steps */
+
+.step {
+    position: relative;
+    flex: 1 1 300px;
+    counter-increment: step-counter;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: $shadow_2;
+    background-color: #f6f6f6;
+
+    &:last-child {
+        background-color: rgba($color_1, .1);
+    }
+
+    &::before {
+        content: counter(step-counter);
+        position: absolute;
+        left: -14px;
+        font-size: 14px;
+        padding: 5px 8px 2px 8px;
+        color: white;
+        background-color: $color_1;
+        border-radius: 99px;
+    }
+
+    & span {
+        float: left;
+    }
+}

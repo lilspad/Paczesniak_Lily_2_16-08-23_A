@@ -1,0 +1,20 @@
+/* Buttons */
+
+.main-button {
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background: linear-gradient(355deg, $color_1 0%, $color_2 100%);
+    box-shadow: $shadow_1;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        opacity: 0.7;
+        box-shadow: 2px 6px 7px #8e8e8e;
+    }
+}
+
+.centered {
+    display: block;
+    margin: 15px auto;
+}

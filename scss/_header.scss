@@ -1,0 +1,15 @@
+/* Header */
+
+header {
+    position: relative;
+    z-index: 5;
+    height: fit-content;
+    box-shadow: 0 3px 5px -2px #c7c7c7;
+}
+
+header .logo {
+    box-sizing: content-box;
+    height: 30px;
+    width: fit-content;
+    padding: 25px 0 15px 0;
+}

@@ -32,7 +32,19 @@
 
 /* Heart button */
 
-.heart-icon, .heart-filled {
+.heart-button {
+    &:hover {
+        .heart-icon {
+        animation: fade-out 1s forwards 0.5s;
+        }
+        .heart-filled::after {
+        animation: fill-up 2s forwards;
+        }
+    }
+}
+
+.heart-icon,
+.heart-filled {
     position: absolute;
     width: 22px;
     height: 22px;
@@ -40,35 +52,31 @@
     bottom: 40px;
 }
 
-.heart-button {
-    & .heart-filled {
-        color: rgba(#000, 0);
-        clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
-        transform: scale(0.8);
-        &.bigger {
-            transform: scale(0.9);
-        }
+.heart-icon {
+    color: rgba(#000, 0);
+    -webkit-text-stroke: 1px #000;
+}
+
+.heart-filled {
+    color: rgba(#000, 0);
+    clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+    transform: scale(0.8);
+
+    &.bigger {
+        transform: scale(0.9);
     }
-    & .heart-filled::after {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 30px;
-        width: 30px;
-        top: 22px;
-        left: -5px;
-        border-radius: 38%;
-        background: linear-gradient(15deg, $color_2 0%, $color_1 100%);
-        
-    }
-    &:hover {
-        & .heart-icon {
-        animation: fade-out 1s forwards 0.5s;
-        }
-        & .heart-filled::after {
-        animation: fill-up 2s forwards;
-        }
-    }
+}
+
+.heart-filled::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 45px;
+    width: 45px;
+    top: 22px;
+    left: -11px;
+    border-radius: 38%;
+    background: linear-gradient(15deg, $color_2 0%, $color_1 100%);
 }
 
 /* animations */

@@ -16,26 +16,6 @@
     }
 }
 
-@keyframes check {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 70px;
-    }
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 /* header */
 
 .header-arrow {
@@ -60,6 +40,7 @@
 /* menu card */
 
 .menu-item {
+    display: flex;
     flex: 1 1 400px;
     position: relative;
     border-radius: 18px;
@@ -67,27 +48,30 @@
     box-shadow: $shadow_2;
     margin-top: 20px;
     opacity: 0;
-    animation-duration: 1.5s;
-	animation-name: appear;
-    animation-fill-mode: forwards;
-    overflow: hidden;
+    animation: appear 1.5s forwards;
+	overflow: hidden;
+	cursor: pointer;
+    & .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 0;
+        transition: width 1s;
+        background-color: $color_3;
+    }
+    & .check-icon {
+        color: white;
+        transform: rotate(360deg);
+        transition: transform 1s;
+    }
     &:hover {
-        .shrink {
-            width: calc(100% - 70px);
-            transition: all 1s;
-        }
         .check {
-            animation: check;
-            animation-duration: 0.8s;
-            animation-fill-mode: forwards;
-            display: flex;
+            width: 80px;
         }
         .check-icon {
-            animation: spin;
-            animation-duration: 0.4s;
-            animation-delay: 0.2s;
-            animation-fill-mode: forwards;
-            display: flex;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
         }
     }
 }
@@ -100,18 +84,3 @@
     }
 }
 
-/* checkmark */
-
-.check {
-    display: none;
-    width: 0;
-    background-color: $color_3;
-    border-radius: 0 18px 18px 0;
-    overflow: hidden;
-}
-
-.check-icon {
-    color: white;
-    height: 22px;
-    margin: 29px 23px;
-}

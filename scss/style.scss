@@ -123,6 +123,10 @@ h1, .shrik {
     justify-content: space-between;
 }
 
+.ag-c {
+    align-items: center;
+}
+
 .ag-start {
     align-items: flex-start;
 }
@@ -242,7 +246,7 @@ h1, .shrik {
 }
 
 .txt-ovf-elip {
-    max-width: 89%;
+    overflow: hidden;
 }
 
 .txt-ovf-elip h4, p {

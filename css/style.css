@@ -90,6 +90,9 @@ h1, .shrik {
 .just-between {
   justify-content: space-between; }
 
+.ag-c {
+  align-items: center; }
+
 .ag-start {
   align-items: flex-start; }
 
@@ -178,7 +181,7 @@ h1, .shrik {
   overflow: hidden; }
 
 .txt-ovf-elip {
-  max-width: 89%; }
+  overflow: hidden; }
 
 .txt-ovf-elip h4, p {
   overflow: hidden;

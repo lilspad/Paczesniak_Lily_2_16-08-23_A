@@ -177,6 +177,9 @@ h1, .shrik {
 .sp-05 {
   letter-spacing: 0.5px; }
 
+.hidden {
+  display: none; }
+
 .ovf-hid {
   overflow: hidden; }
 

@@ -42,6 +42,11 @@
 .menu-item {
     display: flex;
     flex: 1 1 400px;
+}
+
+.menu-label {
+    display: flex;
+    width: 100%;
     position: relative;
     border-radius: 18px;
     background-color: white;
@@ -55,7 +60,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
         width: 0;
         transition: width 1s;
         background-color: $color_3;

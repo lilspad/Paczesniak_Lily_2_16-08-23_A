@@ -29,7 +29,11 @@
 /* menu card */
 .menu-item {
   display: flex;
-  flex: 1 1 400px;
+  flex: 1 1 400px; }
+
+.menu-label {
+  display: flex;
+  width: 100%;
   position: relative;
   border-radius: 18px;
   background-color: white;
@@ -39,21 +43,20 @@
   animation: appear 1.5s forwards;
   overflow: hidden;
   cursor: pointer; }
-  .menu-item .check {
+  .menu-label .check {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 0;
     transition: width 1s;
     background-color: #99E2D0; }
-  .menu-item .check-icon {
+  .menu-label .check-icon {
     color: white;
     transform: rotate(360deg);
     transition: transform 1s; }
-  .menu-item:hover .check {
+  .menu-label:hover .check {
     width: 80px; }
-  .menu-item:hover .check-icon {
+  .menu-label:hover .check-icon {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 

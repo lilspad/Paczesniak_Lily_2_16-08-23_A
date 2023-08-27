@@ -19,11 +19,11 @@ button, select {
   color: inherit;
   cursor: pointer; }
 
-select {
+.no-dropdown {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
-  select:focus {
+  .no-dropdown:focus {
     outline: none; }
 
 /* General */
@@ -186,7 +186,7 @@ h1, .shrik {
 .txt-ovf-elip {
   overflow: hidden; }
 
-.txt-ovf-elip h4, p {
+.txt-ovf-elip strong, span {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
@@ -260,10 +260,13 @@ header .logo {
     position: absolute;
     left: -14px;
     font-size: 14px;
-    padding: 5px 8px 2px 8px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 2;
     color: white;
     background-color: #9356DC;
-    border-radius: 99px; }
+    border-radius: 50%; }
   .step span {
     float: left; }
 
@@ -304,7 +307,7 @@ header .logo {
 .heart-icon,
 .heart-filled {
   position: absolute;
-  width: 22px;
+  width: 25px;
   height: 22px;
   right: 20px;
   bottom: 40px; }
@@ -353,6 +356,11 @@ footer {
   background-color: #353535; }
 
 /* media queries */
+@media screen and (min-width: 600px) {
+  .s-600-wrap {
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
 @media screen and (min-width: 823px) {
   .bg-gray-light {
     margin: 30px;

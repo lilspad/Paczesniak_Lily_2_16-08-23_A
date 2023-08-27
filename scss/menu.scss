@@ -42,6 +42,9 @@
 .menu-item {
     display: flex;
     flex: 1 1 400px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: appear 1.5s forwards;
 }
 
 .menu-label {
@@ -51,9 +54,6 @@
     border-radius: 18px;
     background-color: white;
     box-shadow: $shadow_2;
-    margin-top: 20px;
-    opacity: 0;
-    animation: appear 1.5s forwards;
 	overflow: hidden;
 	cursor: pointer;
     & .check {

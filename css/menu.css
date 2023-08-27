@@ -29,7 +29,10 @@
 /* menu card */
 .menu-item {
   display: flex;
-  flex: 1 1 400px; }
+  flex: 1 1 400px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: appear 1.5s forwards; }
 
 .menu-label {
   display: flex;
@@ -38,9 +41,6 @@
   border-radius: 18px;
   background-color: white;
   box-shadow: 2px 4px 10px #e1e1e1;
-  margin-top: 20px;
-  opacity: 0;
-  animation: appear 1.5s forwards;
   overflow: hidden;
   cursor: pointer; }
   .menu-label .check {

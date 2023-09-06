@@ -71,10 +71,13 @@
 .menu-item:nth-child(3n) {
   animation-delay: 0.6s; }
 
+.menu-item:nth-child(4n) {
+  animation-delay: 0.8s; }
+
 /* media queries 
 
 Large screen */
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1050px) {
   .ls-flex {
     display: flex; }
   .ls-menu {

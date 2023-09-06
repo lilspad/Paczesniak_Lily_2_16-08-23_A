@@ -83,7 +83,7 @@
 
 /* Item appearance delay */
 
-@for $i from 1 through 3 {
+@for $i from 1 through 4 {
     .menu-item:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.2}s;
     }
@@ -93,7 +93,7 @@
 
 Large screen */
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1050px) {
     .ls-flex {
         display: flex;
     }

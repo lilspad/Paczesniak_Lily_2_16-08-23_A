@@ -55,7 +55,7 @@
     box-shadow: $shadow_2;
 	overflow: hidden;
 	cursor: pointer;
-    & .check {
+    .check {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -63,7 +63,7 @@
         transition: width 1s;
         background-color: $color_3;
     }
-    & .check-icon {
+    .check-icon {
         color: white;
         transform: rotate(360deg);
         transition: transform 1s;

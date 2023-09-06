@@ -137,7 +137,7 @@ h1, .shrik {
   margin: 15px 0; }
 
 .m-top-over {
-  margin-top: -50px !important; }
+  margin-top: -50px; }
 
 .m-b-20 {
   margin-bottom: 20px; }
@@ -214,6 +214,53 @@ h1, .shrik {
 
 .z-behind {
   z-index: -1; }
+
+/* Loading screen */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes come-into-focus {
+  80% {
+    filter: blur(20px); }
+  100% {
+    filter: none; } }
+
+@keyframes fade-out-top {
+  0% {
+    opacity: 1;
+    top: 0; }
+  98% {
+    opacity: 0;
+    top: 0; }
+  100% {
+    top: 100vh; } }
+
+.blur {
+  filter: blur(20px);
+  animation: come-into-focus 0.5s forwards 2s; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: fade-out-top 1s forwards 2s; }
+  .overlay .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #eaeaea;
+    border-top: 4px solid #99E2D0;
+    border-radius: 50%;
+    animation: spin 1s linear infinite; }
 
 /* Header */
 header {
@@ -363,7 +410,7 @@ footer {
     flex-wrap: wrap; } }
 
 @media screen and (min-width: 823px) {
-  .bg-gray-light {
+  .ms-container {
     margin: 30px;
     padding: 30px;
     border-radius: 15px; }

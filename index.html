@@ -20,11 +20,14 @@
 </head>
 
 <body>
-    <header class="w-full">
+    <div class="overlay">
+        <div class="spinner"></div>
+    </div>
+    <header class="w-full blur">
         <div class="logo m-auto"><img src="images/logo/ohmyfood.png" alt="OhMyFood logo" class="of-cover100"></div>
     </header>
 
-    <div class="bg-gray-dark w-full pad-v-15">
+    <div class="bg-gray-dark w-full pad-v-15 blur">
         <p class="m-auto w-200 c-gray fw-700">
             <span class="pad-h-15"><i class="fa-solid fa-location-dot"></i></span>
             <select class="no-dropdown">
@@ -34,10 +37,10 @@
         </p>
     </div>
 
-    <main>
+    <main class="blur">
         <section class="flex wrap">
             <!-- call to action -->
-            <div class="bg-gray-light pad-30 pad-b-50 txt-center f-basic">
+            <div class="bg-gray-light pad-30 pad-b-50 txt-center f-basic ms-container">
                 <h2 class="pad-v-15">Book the menu you like</h2>
                 <h3 class="fs-18 fw-300 c-gray pad-v-15">Discover top-of-the-art restaurants we picked for you</h3>
                 <button class="main-button m-v-15">Explore our restaurants</button>
@@ -62,7 +65,7 @@
             </div>
         </section>
         <!-- Restaurants -->
-        <section class="bg-gray-light pad-30-15 pad-b-50">
+        <section class="bg-gray-light pad-30-15 pad-b-50 ms-container">
             <h2 class="pad-v-15 ms-pad-b-30">Restaurants</h2>
             <div class="flex wrap gap-20">
                 <div class="card">
@@ -125,7 +128,7 @@
         </section>
     </main>
 
-    <footer class="flex col just-between gap-20 pad-30 s-600-wrap">
+    <footer class="flex col just-between gap-20 pad-30 s-600-wrap blur">
         <h5 class="shrik fs-20 pad-b-15 sp-05">ohmyfood</h5>
         <nav class="flex col just-around gap-7 s-600-wrap">
             <a href="#">

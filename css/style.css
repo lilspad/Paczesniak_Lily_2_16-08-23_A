@@ -340,8 +340,8 @@ header .logo {
 
 .heart-filled {
   color: rgba(0, 0, 0, 0);
-  clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
-  transform: scale(0.8); }
+  clip-path: url(#heart);
+  transform: scale(0.85); }
   .heart-filled.bigger {
     transform: scale(0.9); }
 

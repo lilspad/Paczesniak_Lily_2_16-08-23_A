@@ -55,7 +55,8 @@
     align-items: center;
     width: 0;
     transition: width 1s;
-    background-color: #99E2D0; }
+    background-color: #99E2D0;
+    flex-shrink: 0; }
   .menu-label .check-icon {
     color: white;
     transform: rotate(360deg);
@@ -84,7 +85,7 @@ Large screen */
     margin: 0;
     border-radius: 0;
     min-width: 55vw;
-    max-height: 100vh;
-    overflow: scroll; }
+    max-height: calc(100vh - 158px);
+    overflow-y: scroll; }
   .mx-h-50 {
-    max-height: none; } }
+    max-height: calc(100vh - 158px); } }

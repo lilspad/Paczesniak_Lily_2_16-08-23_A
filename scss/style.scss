@@ -49,6 +49,8 @@ main {
     }
 }
 
+/* hide overlay after loading */
+
 @keyframes fade-out-top {
     0% {
         opacity: 1;
@@ -99,7 +101,9 @@ footer {
     background-color: #353535;
 }
 
-/* media queries */
+/* media queries 
+
+small screen */
 
 @media screen and (min-width: 700px) {
     .s-700-wrap {
@@ -111,6 +115,8 @@ footer {
         padding-bottom: 0;
     }
 }
+
+/* small to medium screen */
 
 @media screen and (min-width: 823px) {
     .ms-container {
@@ -135,6 +141,8 @@ footer {
     }
 }
 
+/* big screens */
+
 @media screen and (min-width: 1660px) {
     .card {
         min-width: 600px;
@@ -144,5 +152,24 @@ footer {
 @media screen and (min-width: 1760px) {
     .card {
         flex: 1 1 810px;
+    }
+    .cap {
+        margin: 50px 20px;
+    }
+}
+
+
+/* cap content for extra large screen */
+
+@media screen and (min-width: 2589px) {
+
+    main {
+        max-width: 2589px;
+        min-height: calc(100vh - 200px);
+        margin: auto;
+    }
+    .cap {
+        max-width: 2549px;
+        margin: 50px auto;
     }
 }

@@ -1,3 +1,5 @@
+/* Colors */
+/* Shadows */
 /* animations */
 @keyframes appear {
   from {
@@ -33,10 +35,13 @@
   opacity: 0;
   animation: appear 1.5s forwards; }
 
-.menu-input:checked + label .check {
+/* Hover and input animation on the items */
+.menu-input:checked + label .check,
+.menu-item:hover label .check {
   width: 80px; }
 
-.menu-input:checked + label .check-icon {
+.menu-input:checked + label .check-icon,
+.menu-item:hover label .check-icon {
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg); }
 
@@ -62,7 +67,7 @@
     transform: rotate(360deg);
     transition: transform 1s; }
 
-/* Item appearance delay */
+/* Item appearance delay loop */
 .menu-item:nth-child(1n) {
   animation-delay: 0.2s; }
 
@@ -89,3 +94,8 @@ Large screen */
     overflow-y: scroll; }
   .mx-h-50 {
     max-height: calc(100vh - 158px); } }
+
+@media screen and (min-width: 2589px) {
+  .ls-menu {
+    min-width: 50%;
+    max-width: 50%; } }

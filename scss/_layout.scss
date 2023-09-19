@@ -8,6 +8,8 @@
     position: relative;
 }
 
+/* Flex layout */
+
 .flex {
     display: flex;
 }
@@ -59,6 +61,8 @@
 .col-g-20 {
     column-gap: 20px;
 }
+
+/* Dimensions */
 
 .mx-h-50 {
     max-height: 50vh;
@@ -150,6 +154,12 @@
     overflow: hidden;
 }
 
+.z-behind {
+    z-index: -1;
+}
+
+/* Suspension points */
+
 .txt-ovf-elip {
     overflow: hidden;
 }
@@ -160,6 +170,8 @@ span {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+/* Image fit */
 
 .of-coverh180 {
     object-fit: cover;
@@ -173,6 +185,8 @@ span {
     width: 100%;
 }
 
+/* Icon demisension */
+
 .i-spec i {
     height: 20px;
     width: 20px;
@@ -183,10 +197,8 @@ span {
     width: 15px;
 }
 
+/* Border */
+
 .rounded-top {
     border-radius: 30px 30px 0 0;
-}
-
-.z-behind {
-    z-index: -1;
 }

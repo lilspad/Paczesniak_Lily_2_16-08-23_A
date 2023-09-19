@@ -21,6 +21,8 @@
     }
 }
 
+/* Menu link spans the whole card */
+
 .stretch-link {
     position: absolute;
     inset: 0;
@@ -53,10 +55,14 @@
     bottom: 40px;
 }
 
+/* empty hear outline */
+
 .heart-icon {
     color: rgba(#000, 0);
     -webkit-text-stroke: 1px #000;
 }
+
+/* gradient fill-up animation */
 
 .heart-filled {
     color: rgba(#000, 0);

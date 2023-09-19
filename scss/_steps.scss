@@ -14,6 +14,7 @@
     }
 
     &::before {
+        /* Use counter increment to write 1, 2, 3 */
         content: counter(step-counter);
         position: absolute;
         left: -14px;

@@ -46,7 +46,10 @@
     animation: appear 1.5s forwards;
 }
 
-.menu-input:checked + label {
+/* Hover and input animation on the items */
+
+.menu-input:checked + label,
+.menu-item:hover label {
     .check {
     width: 80px;
     }
@@ -82,7 +85,7 @@
 
 }
 
-/* Item appearance delay */
+/* Item appearance delay loop */
 
 @for $i from 1 through 4 {
     .menu-item:nth-child(#{$i}n) {
@@ -109,5 +112,12 @@ Large screen */
 
     .mx-h-50 {
         max-height: calc(100vh - 158px);
+    }
+}
+
+@media screen and (min-width: 2589px) {
+    .ls-menu {
+        min-width: 50%;
+        max-width: 50%;
     }
 }
